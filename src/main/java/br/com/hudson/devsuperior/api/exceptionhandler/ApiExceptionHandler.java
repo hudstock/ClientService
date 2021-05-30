@@ -1,4 +1,4 @@
-package br.com.hudson.devsuperior.api.exception;
+package br.com.hudson.devsuperior.api.exceptionhandler;
 
 import java.time.Instant;
 
@@ -14,7 +14,7 @@ import br.com.hudson.devsuperior.domain.exception.DomainException;
 import br.com.hudson.devsuperior.domain.exception.ResourceNotFoundException;
 
 @ControllerAdvice
-public class ResourceExceptionHandler {
+public class ApiExceptionHandler {
 	
 	@ExceptionHandler(DomainException.class)
 	public ResponseEntity<StandardError> entityNotFound(DomainException e, HttpServletRequest request){

@@ -1,4 +1,4 @@
-package br.com.hudson.devsuperior.api.exception;
+package br.com.hudson.devsuperior.api.exceptionhandler;
 
 import java.io.Serializable;
 import java.time.Instant;

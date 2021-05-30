@@ -1,5 +1,9 @@
-INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Joey',90.5, TIMESTAMP WITH TIME ZONE '1970-02-15', 2 );
-INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Mary',90.5, TIMESTAMP WITH TIME ZONE '1955-10-05', 5 );
-INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Gusman',90.5, TIMESTAMP WITH TIME ZONE '1981-02-15', 3 );
-INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Karl',90.5, TIMESTAMP WITH TIME ZONE '1992-04-03', 1 );
-INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Kim',90.5, TIMESTAMP WITH TIME ZONE '1999-12-01', 0 );
+INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Joey',1190.1, TIMESTAMP WITH TIME ZONE '1970-02-15', 2 );
+INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Mary',950.2, TIMESTAMP WITH TIME ZONE '1955-10-05', 5 );
+INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Gusman',3440, TIMESTAMP WITH TIME ZONE '1981-02-15', 3 );
+INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Karl',1220, TIMESTAMP WITH TIME ZONE '1992-04-03', 1 );
+INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Kim',9000.95, TIMESTAMP WITH TIME ZONE '1999-12-01', 0 );
+INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Lis',3000.99, TIMESTAMP WITH TIME ZONE '1986-11-01', 0 );
+INSERT INTO tb_client (name, income, birth_date, children) VALUES ('John',5400, TIMESTAMP WITH TIME ZONE '1974-12-27', 0 );
+INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Mat',11400, TIMESTAMP WITH TIME ZONE '1969-03-01', 1 );
+INSERT INTO tb_client (name, income, birth_date, children) VALUES ('Tina',2400, TIMESTAMP WITH TIME ZONE '1980-12-27', 4 );
