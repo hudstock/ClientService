@@ -3,6 +3,7 @@ package br.com.hudson.devsuperior.api.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -26,13 +27,9 @@ public class ClientController {
 	ClientService clientService;
 
 	@GetMapping
-	public Page<ClientDTO> findAllPaged(@RequestParam(value = "page", defaultValue = "0") Integer page,
-			@RequestParam(value = "linesPerPage", defaultValue = "12") Integer linesPerPage,
-			@RequestParam(value = "orderBy", defaultValue = "name") String orderBy,
-			@RequestParam(value = "direction", defaultValue = "ASC") String direction) {
+	public Page<ClientDTO> findAllPaged(Pageable pageable) {		
 		
-		PageRequest pageRequest = PageRequest.of(page, linesPerPage, Direction.valueOf(direction), orderBy);
-		return clientService.findAllPaged(pageRequest);
+		return clientService.findAllPaged(pageable);
 	}
 	
 	@GetMapping("/{id}")
